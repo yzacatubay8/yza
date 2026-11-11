@@ -1,0 +1,211 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #cf94c7;
+    color: #642b37;
+}
+
+header {
+    background-color: #872792;
+    padding: 20px 8%;
+    position: fixed;
+    width: 100%;
+}
+
+nav {
+    position: flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: rgb(92, 34, 82);
+    font-size: 25px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: rgb(22, 16, 16);
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #571285;
+    padding: 25px 8px;
+    background-color: #f870e6;
+}
+
+.home {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    padding: 50px 10%;
+}
+
+.home-content h1 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.home-content h1 span {
+    display: block;
+    color: #630647;
+    margin-top: 10px;
+}
+
+.home-content h3 {
+    color: #6d114a;
+    margin-bottom: 15px;
+}
+
+.home-content p {
+    max-width: 550px;
+    line-height: 1.8;
+}
+
+.profile {
+    padding: 40px 10%;
+    text-align: center;
+}
+
+.profile-image img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #b411b4;
+    transition: 0.4s;
+}
+
+.profile-image img:hover {
+    transform: scale(1.08);
+}
+
+.aboutme {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.aboutme h2,
+.contacts h2,
+#skills h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.aboutme h2 span,
+.contacts h2 span,
+#skills h2 span {
+    color: #3b143f;
+}
+
+.aboutme p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+#skills {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.skills {
+    display: inline-block;
+    background-color: rgb(238, 108, 108);
+    padding: 25px;
+    width: 200px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.skills:hover {
+    transform: translateY(-8px);
+    background-color: #e74da7;
+}
+
+.skills li {
+    list-style: none;
+    color: #bc45cc;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.skills p {
+    color: #f58ae7;
+}
+
+.contacts {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.contacts > p {
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    line-height: 2.2;
+}
+
+.contact-info p strong {
+    color: #e059ce;
+}
+
+footer {
+    background-color: #66327a;
+    color: rgb(255, 110, 110);
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .home {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .home-content h1 {
+        font-size: 27px;
+    }
+
+    .skills {
+        width: 80%;
+    }
+
+    .aboutme,
+    #skills,
+    .contacts {
+        padding: 35px 5%;
+    }
+}
